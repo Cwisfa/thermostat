@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Thermostat</title>
+</head>
+
+<body>
+    <h1>Thermostat</h1>
+    <div class="thermostat">
+
+        <div id="powerUsage" class="temperature">
+            <h1 id="tempNumber"></h1>
+        </div>
+
+        <div class="adjustTemp">
+            <button id="increaseTemp" onclick="decreaseTemp(1)" class="btn">-</button>
+            <h6 id="powerStatus"></h6>
+            <button id="decreaseTemp" onclick="increaseTemp(1)" class="btn">+</button>
+
+        </div>
+
+        <div class="bottomButtons">
+            <h2>Power Saving Mode</h2>
+            <button id="powerModeOn" onclick="powerModeOn()" class="btnOn">ON</button>
+            <button id="powerModeOff" onclick="powerModeOff()" class="btnOff">OFF</button>
+            <button id="resetButton" onclick="resetTemp()" class="btnReset">RESET</button>
+        </div>
+
+        <div class="api">
+            <p id="currentCity"></p>
+            <p id="currentTemperature"></p>
+            <p id="currentConditions"></p>
+
+        </div>
+    </div>
+    <script src="src/script.js"></script>
+    <script src="src/thermostat.js"></script>
+</body>
+
+</html>
